@@ -1,0 +1,42 @@
+{
+  "name": "rai-ux-lib",
+  "version": "1.0.0",
+  "description": "",
+  "author": "team@relational.ai",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "prepublishOnly": "pnpm run lint && pnpm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.50.0",
+    "eslint-plugin-react": "^7.33.2",
+    "postcss": "^8.4.31",
+    "rollup": "^3.29.4",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tailwindcss": "^3.3.3"
+  }
+}
