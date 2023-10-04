@@ -6,7 +6,7 @@ interface RedButtonProps {
 
 const RedButton: FC<RedButtonProps> = ({ children }) => {
   return (
-    <button style={{ backgroundColor: 'red', color: 'white' }}>
+    <button className="bg-red-500 text-white px-4 py-2 rounded">
       {children}
     </button>
   );

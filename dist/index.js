@@ -4158,12 +4158,12 @@ var jsxRuntimeExports = jsxRuntime.exports;
 
 var BlueButton = function (_a) {
     var children = _a.children;
-    return (jsxRuntimeExports.jsx("button", { style: { backgroundColor: 'blue', color: 'white' }, children: children }));
+    return (jsxRuntimeExports.jsx("button", { className: "bg-blue-500 text-white px-4 py-2 rounded", children: children }));
 };
 
 var RedButton = function (_a) {
     var children = _a.children;
-    return (jsxRuntimeExports.jsx("button", { style: { backgroundColor: 'red', color: 'white' }, children: children }));
+    return (jsxRuntimeExports.jsx("button", { className: "bg-red-500 text-white px-4 py-2 rounded", children: children }));
 };
 
 exports.BlueButton = BlueButton;
